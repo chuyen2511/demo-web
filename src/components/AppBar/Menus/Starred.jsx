@@ -6,8 +6,8 @@ import MenuItem from '@mui/material/MenuItem'
 import Divider from '@mui/material/Divider'
 import ListItemText from '@mui/material/ListItemText'
 import ListItemIcon from '@mui/material/ListItemIcon'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import Check from '@mui/icons-material/Check';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import Check from '@mui/icons-material/Check'
 
 function Starred() {
   const [anchorEl, setAnchorEl] = React.useState(null)
@@ -21,6 +21,7 @@ function Starred() {
   return (
     <Box>
       <Button
+        sx={{ color:'white' }}
         id="basic-button-starred"
         aria-controls={open ? 'basic-menu-starred' : undefined}
         aria-haspopup="true"
@@ -39,7 +40,7 @@ function Starred() {
           'aria-labelledby': 'basic-button-starred'
         }}
       >
-      <MenuItem>
+        <MenuItem>
           <ListItemText inset>Single</ListItemText>
         </MenuItem>
         <MenuItem>

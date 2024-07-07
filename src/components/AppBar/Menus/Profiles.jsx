@@ -32,7 +32,7 @@ function Profiles() {
           aria-haspopup="true"
           aria-expanded={open ? 'true' : undefined}
         >
-          <Avatar sx={{ width: 34, height: 34 }}
+          <Avatar sx={{ width: 36, height: 36 }}
             src='https://avatars.githubusercontent.com/u/111499392?v=4'
           />
         </IconButton>
@@ -47,10 +47,10 @@ function Profiles() {
         }}
       >
         <MenuItem >
-          <Avatar sx={{width: 28, height: 28, mr:2 }}/> Profile
+          <Avatar sx={{ width: 28, height: 28, mr:2 }}/> Profile
         </MenuItem>
         <MenuItem >
-          <Avatar sx={{width: 28, height: 28, mr:2 }}/> My account
+          <Avatar sx={{ width: 28, height: 28, mr:2 }}/> My account
         </MenuItem>
         <Divider />
         <MenuItem >
