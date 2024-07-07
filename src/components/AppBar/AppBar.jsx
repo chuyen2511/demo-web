@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box'
-import SelectMode from '~/components/SelectMode'
+import SelectMode from '~/components/SelectMode/SelectMode.jsx'
 import AppsIcon from '@mui/icons-material/Apps'
 import { ReactComponent as TrelloIcon } from '~/assets/trello.svg'
 import SvgIcon from '@mui/material/SvgIcon'
@@ -69,7 +69,7 @@ function AppBar() {
           type="text"
           size="small"
           value={searchValue}
-          onChange={(e)=>setSearchValue(e.target.value)}
+          onChange={(e)=> setSearchValue (e.target.value)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
