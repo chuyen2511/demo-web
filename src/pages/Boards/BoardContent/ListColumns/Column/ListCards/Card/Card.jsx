@@ -10,7 +10,7 @@ import { Card as MuiCard } from '@mui/material'
 
 function Card({ card }) {
 
-  const showCard = () =>{
+  const showCard = () => {
     return !!card?.memberIds?.length || !!card?.comments?.length || !!card?.attachments?.length
   }
 
@@ -49,10 +49,10 @@ function Card({ card }) {
         <Button size="small" startIcon={<AttachmentIcon/>}>
           {card?.attachments?.length}
         </Button>}
-        
+
       </CardActions>
       }
-      
+
     </MuiCard>
   )
 }
