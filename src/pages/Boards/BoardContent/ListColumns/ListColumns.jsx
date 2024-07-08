@@ -7,8 +7,8 @@ import { SortableContext, horizontalListSortingStrategy } from '@dnd-kit/sortabl
 function ListColumns({ columns }) {
 
 
-
   return (
+    // horizontalListSortingStrategy là tích hợp kéo thả theo chiều ngang là chính
     <SortableContext items={ columns?.map(c => c._id) } strategy={horizontalListSortingStrategy}>
       <Box sx={{
         bgcolor:'inherit',
