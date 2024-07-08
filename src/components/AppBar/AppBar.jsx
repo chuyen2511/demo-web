@@ -69,7 +69,7 @@ function AppBar() {
           type="text"
           size="small"
           value={searchValue}
-          onChange={(e)=> setSearchValue (e.target.value)}
+          onChange={(e) => setSearchValue (e.target.value)}
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
@@ -105,7 +105,7 @@ function AppBar() {
         <SelectMode />
 
         <Tooltip title="Notification">
-          <Badge color="error" variant="dot" sx={{cursor:'pointer'}}>
+          <Badge color="error" variant="dot" sx={{ cursor:'pointer' }}>
             <NotificationsNoneIcon sx={{ color:'white' }} />
           </Badge>
         </Tooltip>
