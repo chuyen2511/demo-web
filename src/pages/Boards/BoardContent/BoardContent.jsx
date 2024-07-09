@@ -83,15 +83,16 @@ function Boardcontent({ board }) {
         const nextOverColumn = nextColumns.find(column => column._id === overColumn._id)
 
         if (nextActiveColumn) {
-          nextActiveColumn.card = nextActiveColumn.card.filter(card => card._id !== activeDraggingCardId)
+          nextActiveColumn.cards = nextActiveColumn.cards.filter(card => card._id !== activeDraggingCardId)
           nextActiveColumn.cardOrderIds = nextActiveColumn.cards.map(card => card._id)
         }
 
         if (nextOverColumn) {
-          nextOverColumn.card = nextOverColumn.card.filter(card => card._id !== activeDraggingCardId)
-          nextOverColumn.card = nextOverColumn.card.toSpliced(newCardIndex, 0, activeDraggingCardData)
+          nextOverColumn.cards = nextOverColumn.cards.filter(card => card._id !== activeDraggingCardId)
+          nextOverColumn.cards = nextOverColumn.cards.toSpliced(newCardIndex, 0, activeDraggingCardData)
           nextOverColumn.cardOrderIds = nextOverColumn.cards.map(card => card._id)
         }
+
         return nextColumns
       })
     }
