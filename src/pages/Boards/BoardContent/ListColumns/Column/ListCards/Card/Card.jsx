@@ -20,7 +20,8 @@ function Card({ card }) {
     touchAction: 'none',
     transform: CSS.Translate.toString(transform),
     transition,
-    opacity: isDragging ? 0.3 : undefined
+    opacity: isDragging ? 0.3 : undefined,
+    border: isDragging ? '1px solid #050C9C' : undefined
   }
 
   const showCard = () => {
@@ -28,7 +29,7 @@ function Card({ card }) {
   }
 
   return (
-    <MuiCard 
+    <MuiCard
       ref={setNodeRef}
       style={dndKitCard}
       {...attributes}
